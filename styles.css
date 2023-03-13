@@ -1,0 +1,77 @@
+.body {
+    background-color: #2a3d81;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+html,
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #2a3d81;
+    overflow: hidden;
+}
+
+.main-circle {
+    background-color: #6c95cd;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    /* position: relative; */
+}
+
+.circle1,
+.circle2,
+.circle3,
+.circle4 {
+    /* background-color: #2a3d81; */
+    border: 2.5rem solid #2a3d81;
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle1 {
+    top: 49%;
+}
+
+.circle2 {
+    left: 49%;
+}
+
+.circle3 {
+    bottom: 49%;
+}
+
+.circle4 {
+    right: 49%;
+}
+
+/* responsive design */
+
+@media screen and (max-width: 768px) {
+    .main-circle {
+        height: 22rem;
+        width: 22rem;
+    }
+
+    .circle1,
+    .circle2,
+    .circle3,
+    .circle4 {
+        height: 14rem;
+        width: 14rem;
+        border: 2rem solid #2a3d81;
+    }
+}
